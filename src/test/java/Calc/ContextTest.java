@@ -32,8 +32,9 @@ public class ContextTest { //test of the main class Context to justify the need 
         assertEquals(1, context.run("C9/5="));
         assertEquals(0, context.run("C5994*000="));
         assertEquals(50, context.run("C49+-*/+1="));
-        assertEquals(485, context.run("C539-54="));
-        assertEquals(485, context.run("C539-54="));
+        assertEquals(45, context.run("C50+15=30="));
+        assertEquals(57, context.run("C45-7*3/2="));
+
 
     }
 }

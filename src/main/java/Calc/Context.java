@@ -39,4 +39,8 @@ public class Context { //the main class, which contains all the current variable
         }
         return x;
     }
+    @Override
+        public String toString() {
+        return "x=" + x + "  y=" + y + "  operation=" + o + "  state=" + state.getClass().getName();
+    }
 }

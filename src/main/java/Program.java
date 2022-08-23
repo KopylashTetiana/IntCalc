@@ -8,7 +8,7 @@ public class Program { //entrance to the app
         Context calc = new Context();
         while(true) {
             char key = (char) System.in.read();
-            if(key >= ' ') {
+            if(key >= ' ') { //we compare the key with ' ' to avoid reading the 'enter' key ('enter' < ' ')
                 calc.press(key);
                 System.out.println(calc);
             }
